@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Testing AutoComplete
+  form(id="", method="", action="" ng-app="StatesApp")
+    .row
+        label Select state (with drop-down)
+        input(placeholder="Enter state (with dropdown)" states-auto-complete)
+block scripts
+  script(type="application/javascript", src="javascripts/autocompletemodule.js")
