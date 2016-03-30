@@ -9,8 +9,8 @@ branches:
     - master
 deploy:
   provider: heroku
-  api_key:
-    secure: HEROKU_API_KEY
+  app: gentle-bayou-1686
+  api_key: HEROKU_API_KEY
   on:
     branch: master
     node: "5.4.1"
