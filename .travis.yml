@@ -1,16 +1,17 @@
 language: node_js
 node_js:
-  - "stable"
-  - "5.4.1"
+- stable
+- 5.4.1
 git:
   depth: 1
 branches:
   only:
-    - master
+  - master
 deploy:
   provider: heroku
   app: gentle-bayou-1686
-  api_key: HEROKU_API_KEY
+  api_key:
+    secure: Qxx/hwDOd1Gpr7jP3c6ume51VlIyBi1CltVY2+o9/FSJqx5CZZwgnBWYlA4W8lMA8qRi8bzdzD/ZiVanyPvXS58glnADe4l3k0CLQEGqAkWvz1SRZTIvjCZKeoYivNw/CieCJmvu6XlUUvYaXpvZWkUUbiT46FVPbdrANwKtrRjVnbvDWFJfIPGVIDJfJ+U8uAdKuvpFJZTD6SpvOBNDha77wfGLsjAg3kII+5hnUJGqzHLowrWRoo5fsypExCIcVS7vsVIIabNKpMjlYmPQ+tbVQ0bAAS0/0FbyyIlQpK9FP6wUenYx5NhX/ZGpT9Xiu2wJ9Q1ljOqGNQz0fn5XZQCJS+TEvXy4CoOO/gJEHSMN1KEBREPzDoFE8lFl7ZfLlt+voBWMQJvAvjKWbGLFzUEeKhIPp1/pCADgxU5BP8NBSq6AfjQuyZ38PfpBW6ave2wiaqGHtd8TBnQmF76PtCA10ErTNfrGDILI8EcnfHUnSfvo9+dLoa1dOWUXY1jpJxkFBb3aZ9rSAmX7HrL51BBN/qhha+fkO5kMpGvgbIQpYMtwO+Bn4ljFuHvhZya/l5nGFY6J2P7+pbmArolBifRG9q/eWcvejz8BGh5bQYHzU+ozC9Lx2L4r5gDVeHq2naAIPqcVm/PeALbJgkknBuCUHJTDfaWajxu3AXFil0M=
   on:
     branch: master
-    node: "5.4.1"
+    node: 5.4.1
